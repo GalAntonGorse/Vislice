@@ -20,6 +20,16 @@
     <h4>{{ igra.stevilo_napak() }}</h4>
 
     <img src="img/{{ igra.stevilo_napak() }}.jpg" alt="Stopnja obešenosti">
+
+    
+
+    <form method="POST">
+        <label> 
+            Vnesi črko:
+            <input type ="text" name="crka">
+        </label>
+        <input type="submit">
+    </form>
 </body>
 
 </html>
