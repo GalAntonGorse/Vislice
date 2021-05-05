@@ -32,9 +32,9 @@ class Vislice:
         self.igre[id_igre] = (igra, novo_stanje)
 
 class Igra:
-    def __init__(self, geslo, crke=[]):
+    def __init__(self, geslo, crke=None):
         self.geslo = geslo
-        self.crke = crke
+        self.crke = crke or list()
 
     def napacne_crke(self):
         return [c for c in self.crke if c.upper() not in self.geslo.upper()]
