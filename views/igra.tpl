@@ -1,3 +1,4 @@
+%rebase ('base.tpl', naslov='Igra vislic')
 %from model import ZMAGA,PORAZ
 <!DOCTYPE html>
 <html>
