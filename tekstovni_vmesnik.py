@@ -23,10 +23,10 @@ def pozeni_vmesnik():
         crka = zahtevaj_vnos()
         stanje = igra.ugibaj(crka)
         if stanje == model.ZMAGA:
-            print (izpis_zmage(igra))
+            print (izpis_igre(igra))
             break
         elif stanje == model.PORAZ:
-            print (izpis_poraza(igra))
+            print (izpis_igre(igra))
             break 
 
 pozeni_vmesnik()
