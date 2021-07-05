@@ -37,4 +37,8 @@ def ugibaj_na_igri():
 
     return bottle.redirect(f"/igra/")
 
+@bottle.get('/img/<picture>')
+def slika(picture):
+    return bottle.static_file(picture, root="img")
+
 bottle.run(reloader=True, debug=True)
